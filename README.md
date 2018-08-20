@@ -8,7 +8,8 @@ Its meant to be used by advanced users.
 # Usage:
 NDP offers lots of different functions/switches/modes.
 
-# Main switches:
+Main switches:
+
 - "MODE:" shows RW lock status, it can be changed only once per session with a SQUARE + TRIANGLE combo.
   - RR&R - Read Only mode (for backing up/dumping devices).
   - RX&W - Full access mode (restoring/flashing devices is now allowed).
@@ -39,7 +40,9 @@ NDP offers lots of different functions/switches/modes.
   - BACKUP.
   - RESTORE (MODE: must be set to RX&W).
   
-# Functions:
+  
+Functions:
+
 - DUMP - Dumps the selected device/partition to "/ndp/%s.img" file in the selected base partition (LOC:).
 
 - RESTORE - Flashes the selected device/partition using a image found in "/ndp_f/%s.img" in the selected base partition (LOC:).
