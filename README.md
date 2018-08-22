@@ -1,6 +1,8 @@
 # Vita-NDP
 Device/Partition manager for PSP2
 
+![ref0](https://github.com/SKGleba/Vita-NDP/raw/master/pics/2018-08-22-211434.jpg)
+
 # Introduction:
 NDP is a WIP device/partition manager for Playstation Vita.
 Its meant to be used by advanced users.
@@ -21,9 +23,20 @@ Main switches:
   
 - "DEV:" shows current "master" device. Can be changed with a CIRCLE + <- or -> combo.
   - INT - Internal EMMC "NAND".
+  
+  ![ref1](https://github.com/SKGleba/Vita-NDP/raw/master/pics/2018-08-22-211327.jpg)
+  
   - GCD - Game Card.
+  
+  ![ref2](https://github.com/SKGleba/Vita-NDP/raw/master/pics/2018-08-22-211330.jpg)
+  
   - MCD - Memory Card.
+  
+  ![ref3](https://github.com/SKGleba/Vita-NDP/raw/master/pics/2018-08-22-211333.jpg)
+  
   - CUSTOM - Advanced menu.
+  
+  ![ref4](https://github.com/SKGleba/Vita-NDP/raw/master/pics/2018-08-22-211338.jpg)
   
 - "LOC:" shows current base partition (Backups location, logs etc). Can be changed with a SQUARE + <- or -> combo.
   - ux0
@@ -61,4 +74,9 @@ Functions:
 
 - "Dump device (MASTER/FAT16/EXFAT)" - opens a dialog where you can enter the device/partition's BLK name (i.e: mcd-lp-act-entire), and NDP will check if the device exists, if yes - it will dump the device to "/ndp/%s.x" file in the selected base partition (LOC:). Size will be taken from the device's MBR/PBR.
 
+![ref5](https://github.com/SKGleba/Vita-NDP/raw/master/pics/2018-08-22-211406.jpg)
+![ref6](https://github.com/SKGleba/Vita-NDP/raw/master/pics/2018-08-22-211419.jpg)
+
 - "Bruteforce device names" - runs a script which generates all possible partition blk names, and checks if they exists. The existing devices names are logged to "/ndp/devices.log" file in the selected base partition (LOC:).
+
+![ref7](https://github.com/SKGleba/Vita-NDP/raw/master/pics/2018-08-22-211343.jpg)
