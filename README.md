@@ -1,7 +1,7 @@
 # Vita-NDP
 Device/Partition manager for PSP2
 
-![ref0](https://github.com/SKGleba/Vita-NDP/raw/master/pics/2018-08-22-211434.jpg)
+![ref0](https://github.com/SKGleba/Vita-NDP/raw/master/pics/2018-08-22-211437.jpg)
 
 # Introduction:
 NDP is a WIP device/partition manager for Playstation Vita.
