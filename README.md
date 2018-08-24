@@ -1,7 +1,7 @@
 # Vita-NDP
 Device/Partition manager for PSP2
 
-![ref0](https://github.com/SKGleba/Vita-NDP/raw/master/pics/2018-08-22-211437.jpg)
+![ref0](https://github.com/SKGleba/Vita-NDP/raw/master/pics/2018-08-24-145119.jpg)
 
 # Introduction:
 NDP is a WIP device/partition manager for Playstation Vita.
@@ -24,19 +24,21 @@ Main switches:
 - "DEV:" shows current "master" device. Can be changed with a CIRCLE + <- or -> combo.
   - INT - Internal EMMC "NAND".
   
-  ![ref1](https://github.com/SKGleba/Vita-NDP/raw/master/pics/2018-08-22-211327.jpg)
+  ![ref1](https://github.com/SKGleba/Vita-NDP/raw/master/pics/2018-08-24-145225.jpg)
+  ![ref15](https://github.com/SKGleba/Vita-NDP/raw/master/pics/2018-08-24-145229.jpg)
+
   
   - GCD - Game Card.
   
-  ![ref2](https://github.com/SKGleba/Vita-NDP/raw/master/pics/2018-08-22-211330.jpg)
+  ![ref2](https://github.com/SKGleba/Vita-NDP/raw/master/pics/2018-08-24-145243.jpg)
   
   - MCD - Memory Card.
   
-  ![ref3](https://github.com/SKGleba/Vita-NDP/raw/master/pics/2018-08-22-211333.jpg)
+  ![ref3](https://github.com/SKGleba/Vita-NDP/raw/master/pics/2018-08-24-145249.jpg)
   
   - CUSTOM - Advanced menu.
   
-  ![ref4](https://github.com/SKGleba/Vita-NDP/raw/master/pics/2018-08-22-211338.jpg)
+  ![ref4](https://github.com/SKGleba/Vita-NDP/raw/master/pics/2018-08-24-145305.jpg)
   
 - "LOC:" shows current base partition (Backups location, logs etc). Can be changed with a SQUARE + <- or -> combo.
   - ux0
@@ -74,9 +76,19 @@ Functions:
 
 - "Dump device (MASTER/FAT16/EXFAT)" - opens a dialog where you can enter the device/partition's BLK name (i.e: mcd-lp-act-entire), and NDP will check if the device exists, if yes - it will dump the device to "/ndp/%s.x" file in the selected base partition (LOC:). Size will be taken from the device's MBR/PBR.
 
-![ref5](https://github.com/SKGleba/Vita-NDP/raw/master/pics/2018-08-22-211406.jpg)
-![ref6](https://github.com/SKGleba/Vita-NDP/raw/master/pics/2018-08-22-211419.jpg)
+- "Dump device (custom size)" - Allows you to set the size of dumped device manually, then (after pressing START) it opens a dialog where you can enter the device/partition's BLK name (i.e: mcd-lp-act-entire), and NDP will check if the device exists, if yes - it will dump the device to "/ndp/%s.x" file in the selected base partition (LOC:). You can control the size menu with following keys:
+  - UP/DOWN - size +1/-1 block.
+  - CROSS + UP/DOWN - size +0x10/-0x10 blocks.
+  - SQUARE + UP/DOWN - size +0x100/-0x100 blocks.
+  - TRIANGLE + UP/DOWN - size +0x1000/-0x1000 blocks.
+  - CIRCLE + UP/DOWN - size +0x10000/-0x10000 blocks.
+  - LTRIGGER + UP/DOWN - size +0x100000/-0x100000 blocks.
+  - RTRIGGER - resets the size to 0.
+  
+![ref45](https://github.com/SKGleba/Vita-NDP/raw/master/pics/2018-08-24-145506.jpg)
+![ref5](https://github.com/SKGleba/Vita-NDP/raw/master/pics/2018-08-24-145526.jpg)
+![ref6](https://github.com/SKGleba/Vita-NDP/raw/master/pics/2018-08-24-145546.jpg)
 
 - "Bruteforce device names" - runs a script which generates all possible partition blk names, and checks if they exists. The existing devices names are logged to "/ndp/devices.log" file in the selected base partition (LOC:).
 
-![ref7](https://github.com/SKGleba/Vita-NDP/raw/master/pics/2018-08-22-211343.jpg)
+![ref7](https://github.com/SKGleba/Vita-NDP/raw/master/pics/2018-08-24-145630.jpg)
