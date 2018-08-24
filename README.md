@@ -85,7 +85,7 @@ Functions:
   - LTRIGGER + UP/DOWN - size +0x100000/-0x100000 blocks.
   - RTRIGGER - resets the size to 0.
   
-![ref45](https://github.com/SKGleba/Vita-NDP/raw/master/pics/2018-08-24-145506.jpg)
+![ref45](https://github.com/SKGleba/Vita-NDP/raw/master/pics/2018-08-24-153519.jpg)
 ![ref5](https://github.com/SKGleba/Vita-NDP/raw/master/pics/2018-08-24-145526.jpg)
 ![ref6](https://github.com/SKGleba/Vita-NDP/raw/master/pics/2018-08-24-145546.jpg)
 
