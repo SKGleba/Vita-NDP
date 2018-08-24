@@ -1,0 +1,17 @@
+kndp:
+    attributes: 0
+    version:
+        major: 1
+        minor: 0
+    main:
+        start: module_start
+        stop: module_stop
+    modules:
+        kndpLibrary:
+            syscall: true
+            functions:
+                - kndpWorkDevice
+                - kndprw
+                - kndpiex
+                - kndpWriteBuffer
+                - kndpReadBuffer
