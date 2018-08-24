@@ -92,3 +92,9 @@ Functions:
 - "Bruteforce device names" - runs a script which generates all possible partition blk names, and checks if they exists. The existing devices names are logged to "/ndp/devices.log" file in the selected base partition (LOC:).
 
 ![ref7](https://github.com/SKGleba/Vita-NDP/raw/master/pics/2018-08-24-145630.jpg)
+
+# Notes
+- This tool is compatible with all firmwares/devices running TaiHen framework.
+- Use with caution, if you want to backup/dump devices or partitions - stick to RR&R (Read-Only) mode.
+- For any help/serious issue DM me on twitter (twitter.com/skgleba).
+- If you want to help me by donating: paypal.me/skgleba (^_^ thx).
