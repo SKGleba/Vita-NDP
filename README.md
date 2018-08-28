@@ -1,7 +1,7 @@
 # Vita-NDP
 Device/Partition manager for PSP2
 
-![ref0](https://github.com/SKGleba/Vita-NDP/raw/master/pics/2018-08-24-145119.jpg)
+![ref0](https://github.com/SKGleba/Vita-NDP/raw/master/pics/2018-08-28-233737.jpg)
 
 # Introduction:
 NDP is a WIP device/partition manager for Playstation Vita.
@@ -24,21 +24,21 @@ Main switches:
 - "DEV:" shows current "master" device. Can be changed with a CIRCLE + <- or -> combo.
   - INT - Internal EMMC "NAND".
   
-  ![ref1](https://github.com/SKGleba/Vita-NDP/raw/master/pics/2018-08-24-145225.jpg)
-  ![ref15](https://github.com/SKGleba/Vita-NDP/raw/master/pics/2018-08-24-145229.jpg)
+  ![ref1](https://github.com/SKGleba/Vita-NDP/raw/master/pics/2018-08-28-233759.jpg)
+  ![ref15](https://github.com/SKGleba/Vita-NDP/raw/master/pics/2018-08-28-233822.jpg)
 
   
   - GCD - Game Card.
   
-  ![ref2](https://github.com/SKGleba/Vita-NDP/raw/master/pics/2018-08-24-145243.jpg)
+  ![ref2](https://github.com/SKGleba/Vita-NDP/raw/master/pics/2018-08-28-234154.jpg)
   
   - MCD - Memory Card.
   
-  ![ref3](https://github.com/SKGleba/Vita-NDP/raw/master/pics/2018-08-24-145249.jpg)
+  ![ref3](https://github.com/SKGleba/Vita-NDP/raw/master/pics/2018-08-28-233828.jpg)
   
   - CUSTOM - Advanced menu.
   
-  ![ref4](https://github.com/SKGleba/Vita-NDP/raw/master/pics/2018-08-24-145305.jpg)
+  ![ref4](https://github.com/SKGleba/Vita-NDP/raw/master/pics/2018-08-28-233835.jpg)
   
 - "LOC:" shows current base partition (Backups location, logs etc). Can be changed with a SQUARE + <- or -> combo.
   - ux0
@@ -62,7 +62,7 @@ Functions:
 
 - RESTORE - Flashes the selected device/partition using a image found in "/ndp_f/%s.img" in the selected base partition (LOC:).
 
-- FULL DEVICE DUMP - Dumps current "master" device (DEV:) to "/ndp/%s.img" file in the selected base partition (LOC:).
+- PRESS [SELECT] TO DUMP/RESTORE - Dumps current "master" device (DEV:) to "/ndp/%s.img" / Restores current "master" device (DEV:) from "/ndp_f/%s.img" file in the selected base partition (LOC:).
 
 - "Enable RW access to all partitions" - remounts all partitions/devices as RW.
 
@@ -85,13 +85,19 @@ Functions:
   - LTRIGGER + UP/DOWN - size +0x100000/-0x100000 blocks.
   - RTRIGGER - resets the size to 0.
   
-![ref45](https://github.com/SKGleba/Vita-NDP/raw/master/pics/2018-08-24-153519.jpg)
+![ref45](https://github.com/SKGleba/Vita-NDP/raw/master/pics/2018-08-28-233931.jpg)
 ![ref5](https://github.com/SKGleba/Vita-NDP/raw/master/pics/2018-08-24-145526.jpg)
 ![ref6](https://github.com/SKGleba/Vita-NDP/raw/master/pics/2018-08-24-145546.jpg)
 
+- "Clone device (INT/GCD/MCD/USB)" - Allows you to set the cloned device(s) manually, then (after pressing START), it clones the INPUT device to the OUTPUT device. You can control target devices with following keys:
+  - LTRIGGER + UP/DOWN - INPUT device selection +1/-1.
+  - RTRIGGER + UP/DOWN - OUTPUT device selection +1/-1.
+
+![ref65](https://github.com/SKGleba/Vita-NDP/raw/master/pics/2018-08-28-233652.jpg)
+
 - "Bruteforce device names" - runs a script which generates all possible partition blk names, and checks if they exists. The existing devices names are logged to "/ndp/devices.log" file in the selected base partition (LOC:).
 
-![ref7](https://github.com/SKGleba/Vita-NDP/raw/master/pics/2018-08-24-145630.jpg)
+![ref7](https://github.com/SKGleba/Vita-NDP/raw/master/pics/2018-08-28-233849.jpg)
 
 # Notes
 - This tool is compatible with all firmwares/devices running TaiHen framework.
