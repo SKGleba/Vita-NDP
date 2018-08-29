@@ -537,10 +537,7 @@ if (mod_id >= 0) {const char * const argv[] = { "restart", NULL }; sceAppMgrLoad
 						if (omd == 3) omd = 5;
 					break;
 					case 8:
-						if (omd == 3) brutefap(0);
-					break;
-					case 9:
-						if (omd == 3) brutefap(1);
+						if (omd == 3) brutefap();
 					break;
 				}
 				smn();
