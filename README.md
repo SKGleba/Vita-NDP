@@ -103,4 +103,3 @@ Functions:
 - This tool is compatible with all firmwares/devices running TaiHen framework.
 - Use with caution, if you want to backup/dump devices or partitions - stick to RR&R (Read-Only) mode.
 - For any help/serious issue DM me on twitter (twitter.com/skgleba).
-- If you want to help me by donating: paypal.me/skgleba (^_^ thx).
